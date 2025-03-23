@@ -43,7 +43,6 @@ void agregarPedido(vector <Pedido> &pedidos, vector <Producto> productosListas){
             cout << count << ". " << i.nombre << endl;
             count++;
         }
-        // NO FUNCIONA EL WHILE, NO DEJA SALIR APRETANDO -1
         while (opcion < 0 or opcion > productosListas.size()){
             cout << endl;
             cout << "Escribi " << productosListas.size() << " para salir!" << endl;;

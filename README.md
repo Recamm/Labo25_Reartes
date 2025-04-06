@@ -2,7 +2,7 @@
   <h1>LABORATORIO 2025</h1>
 </div>
 # Ejercicios
-Acá se subirán todos los ejercicios correspondientes a las unidades del Laboratorio de Programación Orientado a Objetos 2025.
+Consignas de los ejercicios
 <details>
    
 <summary> Repaso estructuras en C++ </summary>

@@ -191,5 +191,80 @@ Además de la cantidad de números introducidos, se debe mostrar:
 #### 9. PalabrasIguales
 
 Pedir dos palabras al usuario e indicar si son iguales o no.
+</details>
+<details>
+<summary>Unidad 1 - Clases y objetos</summary>
+
+### 1. Clase `Círculo`
+Crear una clase llamada `Círculo` con los siguientes atributos y métodos:
+- Atributo: `radio`
+- Constructor por defecto (`radio=2`)
+- Constructor parametrizado
+- Getter y setter
+- Método para calcular el área (`π * r^2`)
+- Método para calcular el perímetro (`2 * π * r`)
+
+### 2. Clase `Rectángulo`
+Crear una clase llamada `Rectángulo` con los siguientes atributos y métodos:
+- Atributos: `base`, `altura`
+- Constructor parametrizado
+- Getters y setters
+- Método para calcular el área
+- Método para calcular el perímetro
+
+### 3. Clase `Coche`
+Crear una clase llamada `Coche` con los siguientes atributos y métodos:
+- Atributos: `marca`, `modelo`, `color`
+- Constructor parametrizado
+- Getters y setters
+- Métodos: `acelerar`, `frenar`, `mostrarVelocidadActual`
+
+### 4. Clase `Persona`
+Crear una clase llamada `Persona` con los siguientes atributos y métodos:
+- Atributos: `nombre`, `edad`, `dirección`
+- Método para imprimir los datos de la persona en pantalla
+
+### 5. Clase `Fecha`
+Crear una clase `Fecha` con los siguientes atributos y métodos:
+- Atributos: `día`, `mes`, `año`
+- Métodos:
+  - `valida()`: Verifica si la fecha es correcta y ajusta valores inválidos.
+  - `diasMes(int mes)`: Devuelve el número de días del mes indicado.
+  - `corta()`: Muestra la fecha en formato corto (`dd-mm-yyyy`).
+  - `larga()`: Muestra la fecha en formato largo (`día de la semana dd de mes de yyyy`).
+  - `siguiente()`: Avanza un día.
+  - `anterior()`: Retrocede un día.
+  - `igualQue(Fecha fecha)`: Indica si la fecha es igual a otra.
+  - `menorQue(Fecha fecha)`: Indica si la fecha es anterior a otra.
+  - `mayorQue(Fecha fecha)`: Indica si la fecha es posterior a otra.
+
+### 6. Clase `Libro`
+Crear una clase llamada `Libro` con los siguientes atributos y métodos:
+- Atributos: `título`, `autor` (usar la clase `Persona`), `ISBN`, `páginas`, `editorial`, `fechaPublicacion` (usar la clase `Fecha`)
+- Métodos:
+  - Mostrar la información del libro
+  - Comparar si la fecha de publicación es anterior a otro libro dado
+  - 3 constructores distintos a elección
+  - Getters y setters
+
+### 7. Clase `Cafetera`
+Modelar una `Cafetera` con los siguientes atributos y métodos:
+- Atributos: `cantidadMaxima`, `cantidadActual`
+- Métodos:
+  - `Constructor por defecto`: Cantidad máxima = 1000cc, cantidad actual = 0cc.
+  - `Constructor con cantidad máxima`: Inicializa cantidad actual a la capacidad máxima.
+  - `Constructor con cantidad máxima y actual`: Ajusta la cantidad actual si es mayor que la capacidad.
+  - `llenarCafetera()`: Llena la cafetera al máximo.
+  - `servirTaza(int capacidad)`: Sirve café en una taza hasta la capacidad indicada.
+  - `vaciarCafetera()`: Vacía la cafetera.
+  - `agregarCafe(int cantidad)`: Añade café a la cafetera.
+
+### 8. Clase `Cancion`
+Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
+- Atributos: `título`, `autor`
+- Métodos:
+  - Constructor por defecto (inicializa atributos con cadenas vacías)
+  - Constructor parametrizado
+  - Getters y setters
 
 </details>

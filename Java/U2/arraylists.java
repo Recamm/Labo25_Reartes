@@ -1,6 +1,6 @@
 package U2;
 
-import Unidad1.Persona;
+import U1.Persona;
 
 import java.util.ArrayList;
 import java.util.Scanner;

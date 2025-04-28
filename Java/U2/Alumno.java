@@ -7,7 +7,8 @@ import java.util.ArrayList;
 public class Alumno {
     private String nombre, apellido;
     private LocalDate fechaNacimiento;
-    private ArrayList<Integer> listaNotas = new ArrayList<Integer>();
+    private ArrayList<Integer> listaNotas = new ArrayList<>();
+    private ArrayList<Materia> materias = new ArrayList<>();
     Period diff = this.fechaNacimiento.until(LocalDate.now());
     int edadAnios = diff.getYears();
 
@@ -84,5 +85,10 @@ public class Alumno {
         }
         suma /= this.listaNotas.size();
         return suma;
+    }
+
+    public void agregarMateria(Materia materia){
+        this.materias.add(materia);
+        materia.agregarAlumnos(this);
     }
 }

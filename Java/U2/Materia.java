@@ -8,11 +8,6 @@ public class Materia {
     private ArrayList<String> contenidos = new ArrayList<String>();
     private ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
 
-    public void agregarMateria(String nombre, ArrayList<String> contenidos){
-        this.nombre = nombre;
-        this.contenidos = contenidos;
-    }
-
     public void agregarAlumnos(Alumno alumno){
         this.alumnos.add(alumno);
     }

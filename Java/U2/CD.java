@@ -19,13 +19,13 @@ public class CD {
         this.canciones = canciones;
     }
 
-    public int numCanciones(){ return canciones.size(); }
+    public int numCanciones(){ return this.canciones.size(); }
 
-    public String verCancion(int posicion){ return canciones.get(posicion).getTitulo(); }
+    public String verCancion(int posicion){ return this.canciones.get(posicion).getTitulo(); }
 
-    public void grabarCancion(int posicion, Cancion nuevaCancion){ canciones.set(posicion, nuevaCancion); }
+    public void grabarCancion(int posicion, Cancion nuevaCancion){ this.canciones.set(posicion, nuevaCancion); }
 
-    public void agregarCancion(Cancion nuevaCancion){ canciones.add(nuevaCancion); }
+    public void agregarCancion(Cancion nuevaCancion){ this.canciones.add(nuevaCancion); }
 
-    public void eliminarCancion(int posicion){ canciones.remove(posicion); }
+    public void eliminarCancion(int posicion){ this.canciones.remove(posicion); }
 }

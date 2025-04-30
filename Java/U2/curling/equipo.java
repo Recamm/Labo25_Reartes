@@ -3,10 +3,17 @@ package U2.curling;
 import java.util.ArrayList;
 
 public class equipo {
-    private String nombre, barrio, disponibilidadHoraria;
+    private String nombre, barrio;
+    private char disponibilidadHoraria;
     private ArrayList<jugador> jugadores = new ArrayList<>();
 
-    public equipo(String nombre, String barrio, String disponibilidadHoraria) {
+    public equipo() {
+        this.nombre = "";
+        this.barrio = "";
+        this.disponibilidadHoraria = ' ';
+    }
+
+    public equipo(String nombre, String barrio, char disponibilidadHoraria) {
         this.nombre = nombre;
         this.barrio = barrio;
         this.disponibilidadHoraria = disponibilidadHoraria;
@@ -32,11 +39,11 @@ public class equipo {
         this.barrio = barrio;
     }
 
-    public String getDisponibilidadHoraria() {
+    public char getDisponibilidadHoraria() {
         return disponibilidadHoraria;
     }
 
-    public void setDisponibilidadHoraria(String disponibilidadHoraria) {
+    public void setDisponibilidadHoraria(char disponibilidadHoraria) {
         this.disponibilidadHoraria = disponibilidadHoraria;
     }
 
@@ -63,7 +70,8 @@ public class equipo {
             }
             for (int i = 0; i < this.jugadores.size();){
                 if (this.jugadores.get(i) == j){
-                    jugador ejemplo = new jugador(this.jugadores.get(i).getNombre(), this.jugadores.get(i).getNacimiento());
+                    //jugador ejemplo = new jugador(this.jugadores.get(i).getNombre(), this.jugadores.get(i).getNacimiento());
+                    jugador ejemplo = this.jugadores.get(i);
                     ejemplo.setNumeroCamiseta(numeroCamiseta);
                     this.jugadores.set(i, ejemplo);
                 }

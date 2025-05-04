@@ -268,3 +268,143 @@ Crear una clase llamada `Cancion` con los siguientes atributos y métodos:
   - Getters y setters
 
 </details>
+
+<details>
+<summary>Unidad 2 - ArrayLists y for each</summary>
+
+### 1. Operaciones básicas con ArrayLists
+En un programa:
+
+a. Crear un `ArrayList` de números enteros y mostrar su suma.  
+b. Crear un `ArrayList` de palabras y mostrar solo los elementos que empiezan con una letra específica.  
+c. Crear un `ArrayList` de objetos `Persona` y mostrar solo las personas que tienen más de 30 años.
+
+### 2. Clase `CD`
+Crear una clase `CD` compuesta de muchas canciones e implementar los siguientes métodos:
+- Constructor por defecto.
+- Getters y setters.
+- `numeroCanciones()`: Devuelve la cantidad de canciones en el CD.
+- `verCancion(int posicion)`: Devuelve la canción que se encuentra en esa posición.
+- `grabaCancion(int posicion, Cancion nuevaCancion)`: Reemplaza la canción en esa posición por una nueva.
+- `agrega(Cancion cancion)`: Agrega una canción al final del `ArrayList`.
+- `elimina(int posicion)`: Elimina la canción en la posición indicada.
+
+### 3. Clase `Alumno` (básica)
+Crear una clase que represente a un alumno de una escuela con los siguientes atributos:
+- `nombre`, `apellido`, `fechaNacimiento`, `listaDeNotas`
+
+Métodos:
+- Getters y setters de todos los atributos.
+- `agregarNota()`
+- `menorNota()`
+- `mayorNota()`
+
+### 4. Clase `Alumno` con materias
+Extensión del ejercicio anterior incorporando un atributo `materias`, el cual representa una lista de objetos `Materia`.
+
+Clase `Materia`:
+- Atributos: `nombre`, `listaDeContenidos`, `alumnosInscriptos`
+
+Métodos sugeridos:
+- `agregarMateria()`
+- `promedioEdadAlumnos()`
+- `promedioNotasAlumno()`
+
+### 5. Sistema de campeonatos de Curling
+Realizar un sistema que controle campeonatos de curling.
+
+**Requisitos del sistema:**
+- Los equipos deben registrarse con:
+  - Nombre del equipo
+  - Barrio de procedencia
+  - 11 jugadores (uno de ellos marcado como capitán)
+  - Disponibilidad horaria (mañana, tarde, noche)
+
+**De cada jugador:**
+- Nombre
+- Fecha de nacimiento
+- Número de camiseta (no se puede repetir dentro del mismo equipo)
+
+**Reglas del torneo:**
+- Modalidad todos contra todos
+- El sistema debe generar el fixture completo
+- Cada partido debe tener un día, turno y los equipos que juegan
+- Los partidos se agendan según disponibilidad horaria de los equipos
+
+---
+
+## Ejercicios repaso evaluación 12/05
+
+### 1. Sistema de videoclubs
+
+Aparecieron de vuelta los videoclubs en la ciudad que se encargan de vender películas, ya sea en formato digital o físico. Nos han solicitado hacer el sistema que los administre.
+
+Las películas que pertenecen al establecimiento guardan:
+- Nombre
+- Género
+- Duración
+- Director/es
+- Actor/es
+- Idiomas disponibles
+
+Estas películas se organizan dentro de estanterías que se identifican con un número y guardan todas las películas que almacenan.
+
+Cada videoclub guarda:
+- Dirección
+- Código postal
+- Estanterías que contiene
+
+Se solicita modelar las clases con sus atributos correspondientes, constructores, getters y setters. Además, realizar una clase de prueba para cumplir con las siguientes funcionalidades:
+
+a) ABM de videoclubs, estanterías y películas.
+
+b) Mostrar el nombre y estantería de la película con mayor duración de un videoclub.
+
+c) Dada una película, retornar los actores mayores de edad.
+
+d) Retornar los directores que estén en más de una película de una estantería.
+
+e) Retornar las direcciones de los videoclubs que pertenezcan a una comuna en particular.
+
+f) Mostrar las películas de duración menor a 90 minutos con ubicación.
+
+g) Retornar el videoclub con más películas totales.
+
+h) Dado un género, mostrar qué películas hay en cada videoclub registrado.
+
+
+### 2. Clases necesarias para un `main`
+
+Dada una clase `main`, hacer las clases necesarias (con sus respectivos atributos y métodos) para que funcione correctamente.
+
+
+```java
+public static void main(String[] args) {
+    Persona p1 = new Persona("Miguel", "Lopez", 32987990,
+        LocalDate.of(1985, 10, 12), LocalDate.of(2020, 5, 8));
+    Persona p2 = new Persona("Juana", "Gomez", 39987990,
+        LocalDate.of(1986, 7, 28));
+    Persona p3 = new Persona("Candela", "Navarro", 40987990,
+        LocalDate.of(1993, 2, 4), LocalDate.of(2017, 5, 25));
+
+    BancoNacion sucursalUrquiza = new BancoNacion("Av. Triunvirato 3450", true, false);
+    BancoNacion sucursalPueyrredon = new BancoNacion("Cochrane 2874", true, true);
+
+    ArrayList<BancoNacion> sucursales = new ArrayList<>();
+
+    sucursales.add(sucursalUrquiza);
+    sucursales.add(sucursalPueyrredon);
+
+    sucursalUrquiza.agregarTrabajador(p1);
+    sucursalUrquiza.agregarTrabajador(p3);
+    sucursalPueyrredon.agregarTrabajador(p2);
+
+    sucursalPueyrredon.cantidadTrabajadores();
+
+    for (BancoNacion b : sucursales) {
+        Persona p = b.empleadoMayorAntiguedad();
+        System.out.println(p.getNombre() + " " + p.antiguedad());
+    }
+}
+```
+</details>

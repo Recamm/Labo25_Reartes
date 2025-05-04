@@ -332,8 +332,10 @@ Realizar un sistema que controle campeonatos de curling.
 - Los partidos se agendan según disponibilidad horaria de los equipos
 
 ---
+</details>
 
-## Ejercicios repaso evaluación 12/05
+<details>
+<summary>Ejercicios repaso evaluación 12/05</summary>
 
 ### 1. Sistema de videoclubs
 

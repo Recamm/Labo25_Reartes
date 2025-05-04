@@ -55,8 +55,8 @@ public class sistema {
         }
 
         for (int turno = 0; turno < 3; turno++){
-            for(int i = 0; i < equipo.size()-1; i++){
-                for (int ii = i+1; i < equipo.size()-1; i++){
+            for(int i = 0; i < this.equipos.size()-1; i++){
+                for (int ii = i+1; i < this.equipos.size()-1; i++){
                     partido match = new partido();
                     switch (turno){
                         case 0:

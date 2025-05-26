@@ -4,12 +4,17 @@ public class Clothing {
     private String description, size;
     private double price;
 
-    public Clothing() {
-        this.size = "M";
+    //final --> Es una constante, no se puede modificar despues de su declaracion
+    private final double minPrice = 10, minTax = 0.2;
+
+    public Clothing(String description, double price, String size) {
+        this.description = description;
+        this.price = price;
+        this.size = size;
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
@@ -17,18 +22,20 @@ public class Clothing {
     }
 
     public String getSize() {
-        return size;
+        return this.size;
     }
 
     public void setSize(String size) {
         this.size = size;
     }
 
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice() { return this.price * (1 + this.minTax); }
 
     public void setPrice(double price) {
-        this.price = price;
+        if (price > minPrice) {
+            this.price = price;
+        } else {
+            this.price = minPrice;
+        }
     }
 }

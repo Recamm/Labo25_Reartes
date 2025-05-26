@@ -1,4 +1,4 @@
-package Java.repasoPrueba2;
+package repasoPrueba2;
 
 import java.util.ArrayList;
 

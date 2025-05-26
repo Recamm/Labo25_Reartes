@@ -1,4 +1,4 @@
-package Java.U3.personas;
+package U3.personas;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package Java.U3;
+package U3;
 
 public class Camioneta extends Vehiculo {
     private int patente;

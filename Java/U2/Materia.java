@@ -20,4 +20,8 @@ public class Materia {
         sum /= this.alumnos.size();
         return sum;
     }
+
+    public void agregarAlumnos(U3.personas.Alumno alumno) {
+
+    }
 }

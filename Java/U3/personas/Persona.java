@@ -1,10 +1,10 @@
-package Java.U3.personas;
+package U3.personas;
 
 import java.time.LocalDate;
 
 public class Persona {
     private String nombre, apellido, direccion;
-    private LocalDate fechaNacimiento;
+    LocalDate fechaNacimiento;
     private int edad;
 
     public Persona(String nombre, String apellido, String direccion, int edad) {

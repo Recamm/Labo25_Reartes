@@ -1,4 +1,4 @@
-package Java.U3;
+package U3;
 
 import java.util.ArrayList;
 

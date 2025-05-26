@@ -1,4 +1,4 @@
-package Java.U3;
+package U3;
 
 public class Vehiculo {
     private String marca, modelo, color;

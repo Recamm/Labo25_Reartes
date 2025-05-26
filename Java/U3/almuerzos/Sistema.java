@@ -34,23 +34,21 @@ public class Sistema {
 
 
         // Saber si hay platos repetidos, y almacenarlos en un ArrayList de Plato
-        // Donde los numeros pares son el plato y el impar son la cantidad de pedidos
-        ArrayList<CantidadPlatos> platosCantidad = new ArrayList<>();
+        ArrayList<Plato> platos = new ArrayList<>();
         for (Pedido pe:pedidos){
             for (Plato pl:pe.getPlatos()){
-                CantidadPlatos cantPl = new CantidadPlatos(0);
-                if (!platosCantidad.contains(pl)){
-                    cantPl.setPlato(pl);
-                } else {
-                    cantPl.incrementarCantidad();
+                pl.incrementarCantidad();
+                if (!platos.contains(pl)){
+                    platos.add(pl);
                 }
             }
         }
 
+
         System.out.println("Top platos:");
-        platosCantidad.sort(Comparator.comparingInt(CantidadPlatos::getCantidad).reversed());
-        for (CantidadPlatos cantPl:platosCantidad){
-            System.out.println(cantPl.getPlato().getNombre() + " --> pedido " + cantPl.getCantidad() + " veces");
+        platos.sort(Comparator.comparingInt(Plato::getCantidadPedidos).reversed());
+        for (Plato cantPl:platos){
+            System.out.println(cantPl.getNombre() + " --> pedido " + cantPl.getCantidadPedidos() + " veces");
         }
 
     }

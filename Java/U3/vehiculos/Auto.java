@@ -18,7 +18,7 @@ public class Auto extends Vehiculo {
         this.patente = patente;
     }
 
-    public boolean isDescapotables() {
+    public boolean getDescapotables() {
         return descapotables;
     }
 

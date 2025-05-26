@@ -1,4 +1,4 @@
-package U3;
+package U3.vehiculos;
 
 public class Bicicleta extends Vehiculo {
     public Bicicleta(String marca, String modelo, String color, int cantidadDeRuedas, int anioFabricacion) {

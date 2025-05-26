@@ -1,4 +1,4 @@
-package U3;
+package U3.vehiculos;
 
 public class Auto extends Vehiculo {
     private String patente;

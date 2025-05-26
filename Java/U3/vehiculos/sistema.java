@@ -1,4 +1,4 @@
-package U3;
+package U3.vehiculos;
 
 import java.util.ArrayList;
 

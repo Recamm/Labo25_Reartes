@@ -9,10 +9,6 @@ public class Compra {
     private ArrayList<Componentes> componentes;
 
     public Compra(int celularCliente, boolean tarjeta, ArrayList<CPU> cpu, ArrayList<Componentes> componentes) {
-        for (Componentes c:componentes){
-            if (c.instedOf)
-        }
-        if (this.componentes.size() > 1 && this.componentes && this.componentes.indexOf(PerifericosEntrada))
         this.celularCliente = celularCliente;
         this.tarjeta = tarjeta;
         this.cpu = cpu;

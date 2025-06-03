@@ -4,6 +4,9 @@ public class Sensor {
     private boolean estado;
     private int medida, umbralInicial, anioAdquisicion;
 
+    public Sensor() {
+    }
+
     public Sensor(boolean estado, int medida, int umbralInicial, int anioAdquisicion) {
         this.estado = estado;
         this.medida = medida;
@@ -41,5 +44,13 @@ public class Sensor {
 
     public void setAnioAdquisicion(int anioAdquisicion) {
         this.anioAdquisicion = anioAdquisicion;
+    }
+
+    public void dispararAlarma(){}
+
+    public void statusAlarma(){
+        if(estado && medida > umbralInicial){
+            dispararAlarma();
+        }
     }
 }

@@ -1,4 +1,0 @@
-package U5;
-
-public class asd {
-}

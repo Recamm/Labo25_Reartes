@@ -3,11 +3,12 @@ package U3.controlLlamadas;
 import java.util.ArrayList;
 
 public class Empleado {
-    private String nombre, apellido, pais;
+    private String nombre, apellido;
+    private Pais pais;
     private int numeroTelefo, numeroDNI, tiempoLlamadaNacional, tiempoLlamadaInternacional;
     private ArrayList<LlamadaDatos> llamadas;
 
-    public Empleado(String nombre, String apellido, String pais, int numeroTelefo, int numeroDNI) {
+    public Empleado(String nombre, String apellido, Pais pais, int numeroTelefo, int numeroDNI) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.pais = pais;
@@ -34,11 +35,11 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public String getPais() {
+    public Pais getPais() {
         return pais;
     }
 
-    public void setPais(String pais) {
+    public void setPais(Pais pais) {
         this.pais = pais;
     }
 

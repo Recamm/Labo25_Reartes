@@ -1,10 +1,15 @@
 package U3.vehiculos;
 
+import U1.Colores;
+
+import java.awt.*;
+
 public class Vehiculo {
-    private String marca, modelo, color;
+    private String marca, modelo;
+    private Color color;
     private int cantidadDeRuedas, anioFabricacion;
 
-    public Vehiculo(String marca, String modelo, String color, int cantidadDeRuedas, int anioFabricacion) {
+    public Vehiculo(String marca, String modelo, Color color, int cantidadDeRuedas, int anioFabricacion) {
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
@@ -28,11 +33,11 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

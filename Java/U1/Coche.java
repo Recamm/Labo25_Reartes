@@ -1,10 +1,11 @@
 package U1;
 
 public class Coche {
-    private String marca, modelo, color;
+    private String marca, modelo;
     private int velocidad;
+    private Colores color;
 
-    public Coche(String modelo, String marca, String color) {
+    public Coche(String modelo, String marca, Colores color) {
         this.modelo = modelo;
         this.marca = marca;
         this.color = color;
@@ -27,11 +28,11 @@ public class Coche {
         this.modelo = modelo;
     }
 
-    public String getColor() {
+    public Colores getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Colores color) {
         this.color = color;
     }
 

@@ -22,7 +22,7 @@ public class Sistema {
                 index = i;
             }
         }
-        recetas.add(index, post);
+        recetas.set(index, post);
     }
 
     private void recetasDificultad(Dificultad dificultad){

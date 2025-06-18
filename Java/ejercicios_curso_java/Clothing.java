@@ -5,7 +5,7 @@ public class Clothing {
     private double price;
 
     //final --> Es una constante, no se puede modificar despues de su declaracion
-    private final double minPrice = 10, minTax = 0.2;
+    public final static double minPrice = 10, minTax = 0.2;
 
     public Clothing(String description, double price, String size) {
         this.description = description;
@@ -37,5 +37,10 @@ public class Clothing {
         } else {
             this.price = minPrice;
         }
+    }
+
+    @Override 
+    public String toString() {
+        return getDescription() + ", " + getSize() + ", " + getPrice();
     }
 }

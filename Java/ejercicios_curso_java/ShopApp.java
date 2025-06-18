@@ -10,6 +10,8 @@ public class ShopApp {
 
         System.out.println("El nombre" + c1.getName());
 
+        System.out.println("Precio minimo: " + Clothing.minPrice);
+
         Clothing item1 = new Clothing("Blue Jacket", 20.9, "M"), item2 = new Clothing("Orange T-Shirt", 10.5, "S"),
                 item3 = new Clothing("Green Scarf", 5, "S"), item4 = new Clothing("Blue Jacket", 10.5, "M");
 
@@ -44,7 +46,8 @@ public class ShopApp {
         for(Clothing item : items) {
             if(item.getSize().equals(item.getSize())) {
                 total += item.getPrice();
-                System.out.println("Description: " + item.getDescription() + ", Price: " + item.getPrice() + ", Size: " + item.getSize());
+                // System.out.println("Description: " + item.getDescription() + ", Price: " + item.getPrice() + ", Size: " + item.getSize());
+                System.out.println("Description: " + item);
                 if (total > 15){ break; }
             }
         }

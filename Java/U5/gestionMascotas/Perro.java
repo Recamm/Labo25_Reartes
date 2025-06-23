@@ -1,4 +1,4 @@
 package U5.gestionMascotas;
 
-public class Perro extends Mascota{
+public class Perro{
 }

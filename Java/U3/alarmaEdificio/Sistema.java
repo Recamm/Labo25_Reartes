@@ -1,9 +1,6 @@
 package U3.alarmaEdificio;
 
-import java.lang.classfile.instruction.SwitchCase;
-import java.lang.runtime.SwitchBootstraps;
 import java.util.ArrayList;
-import java.util.SequencedSet;
 
 public class Sistema {
     ArrayList<Sensor> sensores = new ArrayList<>();

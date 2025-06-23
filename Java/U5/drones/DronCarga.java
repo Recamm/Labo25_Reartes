@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class DronCarga extends Dron{
     private double pesoCarga;
 
-    public DronCarga(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, int contador, Estado estado, double pesoCarga) {
-        super(nombreModelo, fechaAdquicicion, nivelCarga, contador, estado);
+    public DronCarga(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, Estado estado, double pesoCarga) {
+        super(nombreModelo, fechaAdquicicion, nivelCarga, estado);
         this.pesoCarga = pesoCarga;
     }
 

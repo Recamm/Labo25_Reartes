@@ -83,7 +83,7 @@ public class Mision {
                 if (this.distancia <= 30){
                     if (this.dron.getNivelCarga() > 52){
                         DronCarga dronEj = (DronCarga) this.dron;
-                        dronEj.descargarBateria(52);
+                        dronEj.descargarBateria(50);
                         this.dron = dronEj;
                         this.realizadoConExito = true;
                     } else {

@@ -1,4 +1,4 @@
 package U5.gestionMascotas;
 
-public class Gato 230{
+public class Gato {
 }

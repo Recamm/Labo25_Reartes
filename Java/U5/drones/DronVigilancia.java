@@ -5,8 +5,8 @@ import java.time.LocalDate;
 public class DronVigilancia extends Dron{
     private double memoriaSDlibre;
 
-    public DronVigilancia(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, int contador, Estado estado, double memoriaSDlibre) {
-        super(nombreModelo, fechaAdquicicion, nivelCarga, contador, estado);
+    public DronVigilancia(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, Estado estado, double memoriaSDlibre) {
+        super(nombreModelo, fechaAdquicicion, nivelCarga, estado);
         this.memoriaSDlibre = memoriaSDlibre;
     }
 

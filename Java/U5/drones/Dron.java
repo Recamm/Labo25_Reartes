@@ -5,14 +5,16 @@ import java.time.LocalDate;
 public abstract class Dron {
     private String nombreModelo;
     private LocalDate fechaAdquicicion;
-    private int nivelCarga, contador;
+    private int nivelCarga, ID;
+    private static int contador;
     private Estado estado;
 
-    public Dron(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, int contador, Estado estado) {
+    public Dron(String nombreModelo, LocalDate fechaAdquicicion, int nivelCarga, Estado estado) {
         this.nombreModelo = nombreModelo;
         this.fechaAdquicicion = fechaAdquicicion;
         this.nivelCarga = nivelCarga;
-        this.contador = contador;
+        this.ID = contador;
+        this.contador ++;
         this.estado = estado;
     }
 
@@ -40,12 +42,8 @@ public abstract class Dron {
         this.nivelCarga = nivelCarga;
     }
 
-    public int getContador() {
-        return contador;
-    }
-
-    public void setContador(int contador) {
-        this.contador = contador;
+    public int getID() {
+        return ID;
     }
 
     public Estado getEstado() {

@@ -611,7 +611,8 @@ Adicionalmente se debe poder calcular la persona con mejor y con peor coeficient
 <details>
 <summary>Ejercicio repaso evaluación unidades 3, 4 y 5</summary>
 
-1. Gestión de tickets:
+# Gestión de tickets:
+
 Tenemos un sistema que se ocupa de revisar la VTV de los autos que circulan por la ciudad. Se compone de Software y dispositivos como cámaras, radares y camiones. Cuando algo no funciona como debería, o un usuario no entiende una funcionalidad, o se quieren agregar cosas nuevas se pueden emitir Tickets. Estos le informan a la empresa desarrolladora qué está pasando con su sistema.
 
 Vamos a modelar la gestión de tickets de soporte técnico para este sistema. Todos los tickets tienen un cliente asignado, una descripción, una fecha y hora de creación, fecha y hora de finalización, una lista de comentarios donde los desarrolladores van a ir registrando anotaciones y estado del ticket: abierto, en progreso, resuelto, cerrado, cancelado.

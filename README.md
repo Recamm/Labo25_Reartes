@@ -636,3 +636,94 @@ El tiempo promedio de resolución de los tickets en general. Para hacerlo calcul
 Resolver el sistema que responda de manera correcta a todas las funcionalidades mediante programación orientado a objetos. Incluir main.
 
 </details>
+
+<details>
+
+<summary>Unidad 6 - HashMaps y HashSets</summary>
+
+### 1. Vacunatorio
+
+Se va a realizar una campaña nacional de vacunación y nos piden un sistema para registrar los ciudadanos ya vacunados.
+
+De cada ciudadano tenemos dni, nombre y apellido, provincia de residencia, domicilio y mail de contacto. A su vez, las vacunas tienen una fecha de fabricación, fecha d eaplicación, numero de lote, numero de fabricacion y nombre comercial.
+
+Se solicita poder tener en nuestro sistema lo necesario para que nos facilite:
+- Registrar una vacuna aplicada a un ciudadano.
+- Consultar el historial de vacunas de un ciudadano por dni.
+- Obtener cuantas personas fueron vacunadas por Provincia
+- Saber qué ciudadanos cumplen con tener una determinada cantidad de vacunas pasada por parametro.
+- Conocer dado una vacuna determinada qué ciudadanos ya se la dieron.
+
+### 2. Pago de empleados
+
+La empresa "Creativos sin límites" desea gestionar el pago de sus empleados que son todos diseñadores. Estos tienen una comisión sobre los proyectos que realizan de acuerdo al tipo de diseñador según la siguiente tabla:
+
+| Tipo de diseñador | Comisión | 
+|---|---|
+| UX | 8% | 
+| UI | 7% | 
+| IT | 12% | 
+
+Un diseñador no puede realizar un mismo proyecto dos veces. Entonces, estos almacenan una lista de los proyectos junto a cuánto ganaron por hacer cada uno. Así, un diseñador debe poder:
+- Conocer su sueldo. Para eso deberán adicionarle a la suma de lo que recaudó por todos los proyectos la comisión de acuerdo al tipo de diseñador que sea.
+- Saber cantidad de proyectos realizados hasta el momento.
+- Dado un proyecto determinado conocer cuánto gano sin comisión.
+- Mostrar el detalle del sueldo discriminado para todos los proyectos que hizo. Es decir, por cada proyecto mostrar el nombre, cuánto gano y cuánto representa la comisión
+
+
+### 3. Control altura y peso
+
+Realizar un sistema que controle la altura y peso de una persona a través del tiempo. La persona debe tener un nombre, apellido y fecha de nacimiento.
+
+Cada persona cuando se pesa y mide debe registrar su peso y altura justo con la fecha.
+
+La persona debe tener una forma de conocer:
+
+- Su peso y altura en una fecha en particular.
+
+- El promedio de peso y de altura en un año.
+
+- El porcentaje de crecimiento de una fecha a otra.
+
+### 4. Control calorías
+
+Realizar un sistema que controle las calorías consumidas por personas dentro de una familia. Las personas se almacenarán en una entidad denominada familia, es decir, una familia va a tener muchas personas.
+
+Existirán platos los cuales tendrán nombre, ingredientes y cantidad de calorías que poseen.
+
+De las personas se desea conocer el nombre y fecha de nacimiento. Cada vez que una come un plato se debe guardar ese dato para luego saber:
+
+- Cantidad de calorías consumidas en total por la persona.
+
+- Promedio de calorías por familia.
+
+- Persona que consumió más calorías en la familia.
+
+- Persona que consumió menos calorías en la familia.
+
+### 5. Sistema de población
+
+Realizar un abm de lugares. Los lugares pueden ser de tipo: **Barrio**, **Ciudad**, **Provincia o Estado**, **País**, **Continente**.
+
+Todos los tipos de lugares tienen un nombre, código y una lista de coordenadas (latitud y longitud) que unidas representan el contorno del lugar
+
+Las reglas de composición son:
+
+- Una **ciudad** está compuesta por barrios.
+- Una **provincia o estado** está compuesta por ciudades.
+- Un **país** está compuesto por provincias o estados.
+- Un **continente** está compuesto por países.
+
+Para el caso de los barrios tendrán un atributo llamado `población`, el mismo indica la cantidad de habitantes del barrio. En los otros casos este atributo no existe, pero se desea calcular la población de forma automática.
+
+Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A realizar:
+
+- ABM (Alta, Baja y Modificación) de lugares
+- Consulta de población de lugares por código de lugar
+- Pantalla de información con:
+    - País con más población
+    - País con menos población
+    - Continente con más población
+    - Continente con menos población
+
+</details>

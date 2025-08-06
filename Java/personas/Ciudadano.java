@@ -4,17 +4,21 @@ import java.util.HashMap;
 
 public class Ciudadano {
     private int dni;
-    private String nombre, apellido, provinciaResidencia, domicilio, mailContacto;
+    private String nombre, apellido, provinciaResidencia, domicilio, mailContacto, provincia;
 
-    public Ciudadano(int dni, String nombre, String apellido, String provinciaResidencia, String domicilio, String mailContacto) {
+    public Ciudadano(int dni, String nombre, String apellido, String provinciaResidencia, String domicilio, String mailContacto, String provincia) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
         this.provinciaResidencia = provinciaResidencia;
         this.domicilio = domicilio;
         this.mailContacto = mailContacto;
-
+        this.provincia = provincia;
     }
+
+    public String getProvincia() { return provincia; }
+
+    public void setProvincia(String provincia) { this.provincia = provincia; }
 
     public int getDni() {
         return dni;

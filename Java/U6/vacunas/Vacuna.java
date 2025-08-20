@@ -1,4 +1,4 @@
-package vacunas;
+package U6.vacunas;
 
 import java.time.LocalDate;
 

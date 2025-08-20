@@ -1,7 +1,7 @@
-package sistemas;
+package U6.sistemas;
 
-import personas.Ciudadano;
-import vacunas.Vacuna;
+import U6.personas.Ciudadano;
+import U6.vacunas.Vacuna;
 
 import javax.xml.transform.Source;
 import java.util.HashMap;

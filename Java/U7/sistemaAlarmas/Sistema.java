@@ -1,4 +1,4 @@
-package U3.alarmaEdificio;
+package U7.sistemaAlarmas;
 
 import java.util.ArrayList;
 
@@ -10,6 +10,8 @@ public class  Sistema {
             s.statusAlarma();
         }
     }
+
+    
 
     public void main(String[] args) {
         boolean bucle = true;

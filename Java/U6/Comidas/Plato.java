@@ -1,4 +1,4 @@
-package Comidas;
+package U6.Comidas;
 
 import java.util.HashSet;
 

@@ -1,6 +1,7 @@
-package personas;
+package U6.personas;
 
-import Comidas.Plato;
+import U6.Comidas.Plato;
+import U6.Comidas.Plato;
 
 import java.util.HashSet;
 import java.util.Map;

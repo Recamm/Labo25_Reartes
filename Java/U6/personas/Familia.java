@@ -1,4 +1,4 @@
-package personas;
+package U6.personas;
 
 import java.util.HashSet;
 

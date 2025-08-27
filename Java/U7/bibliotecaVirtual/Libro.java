@@ -4,16 +4,15 @@ public class Libro {
     private String titulo, nombreArchivoPDF;
     private Autor autor;
     private Genero genero;
-    private int cantDescargasDisponibles;
+    private static int cantDescargasDisponibles = 145;
     private int stockDisponible;
 
-    public Libro(String titulo, String nombreArchivoPDF, Autor autor, Genero genero, int cantDescargasDisponibles, int stockDisponible) {
+    public Libro(String titulo, String nombreArchivoPDF, Autor autor, Genero genero) {
         this.titulo = titulo;
         this.nombreArchivoPDF = nombreArchivoPDF;
         this.autor = autor;
         this.genero = genero;
-        this.cantDescargasDisponibles = 145;
-        this.stockDisponible = 145;
+        this.stockDisponible = Libro.cantDescargasDisponibles;
     }
 
     public String getTitulo() {
@@ -58,5 +57,9 @@ public class Libro {
 
     public void setStockDisponible(int stockDisponible) {
         this.stockDisponible = stockDisponible;
+    }
+
+    public void alquilarLibro(){
+        Libro.cantDescargasDisponibles --;
     }
 }

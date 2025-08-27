@@ -780,3 +780,226 @@ Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar q
 - Encuentre la bebida que quiere consumir y tenga esa cantidad que solicita. 
 - Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación. 
 </details>
+
+
+<details>
+<summary><strong> Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
+  
+### 1. Gestión de tickets:
+
+Tenemos un sistema que se ocupa de revisar la VTV de los autos que circulan por la ciudad. Se compone de Software y dispositivos como cámaras, radares y camiones. Cuando algo no funciona como debería, o un usuario no entiende una funcionalidad, o se quieren agregar cosas nuevas se pueden emitir Tickets. Estos le informan a la empresa desarrolladora qué está pasando con su sistema. 
+
+Vamos a modelar la gestión de tickets de soporte técnico para este sistema. Todos los tickets tienen un cliente asignado, una descripción, una fecha y hora de creación, fecha y hora de finalización, una lista de comentarios donde los desarrolladores van a ir registrando anotaciones y estado del ticket: abierto, en progreso, resuelto, cerrado, cancelado. 
+
+Es importante que los tickets puedan cambiar su estado, que se puedan agregar comentarios por parte del desarrollador y que se puedan resolver. Tener en cuenta que al cambiar de estado o, si se resuelve el ticket, hacer todas las modificaciones necesarias 
+
+Los tickets pueden ser de hardware o de software. Para los de hardware vamos a guardar dispositivo y la forma de resolverlo es corroborando si hay repuestos disponibles para ese dispositivo. Si hay repuestos y el ticket estaba en progreso, cambiarlo a resuelto y retornar true, sino retornar false. 
+
+Los tickets de software guardan el software sobre el que se está emitiendo el ticket y estos tienen una cantidad máxima de intentos de resolución que es igual para todos y es de 3 intentos. Para poder resolverlo, si el software tiene un parche aplicable y todavía restan intentos, entonces si estaba en progreso pasa a resuelto y retorna true. Si alguna de las dos condicionas falla, retorna false.  
+
+Como parte de la gestión, tendremos una lista con los tickets de software y de hardware y los desarrolladores. Se querrá conocer: 
+
+- Cantidad de tickets en un determinado estado. 
+- Cantidad de tickets totales. 
+- Ticket más antiguo que aún no ha sido agarrado por ningún desarrollador (es decir, el estado es abierto) 
+- Desarrollador que más tickets resuelve. 
+- Tickets asignados a un desarrollador determinado. 
+- Desarrollador más antiguo en el sistema. 
+- Dado un ticket determinado, conocer el o los desarrolladores asignados a resolverlo. 
+- El tiempo promedio de resolución de los tickets en general. Para hacerlo calcular la diferencia entre fecha de resolución y fecha de creación y luego el promedio (Sugerencia: utilizar clase Duration)  
+
+Resolver el sistema que responda de manera correcta a todas las funcionalidades mediante programación orientado a objetos. Incluir main. 
+
+</details>
+
+<details>
+<summary><strong> Unidad 6 - HashMaps y HashSets </strong></summary>
+  
+### 1. Vacunatorio
+
+Se va a realizar una campaña nacional de vacunación y nos piden un sistema para registrar los ciudadanos ya vacunados. 
+
+De cada ciudadano tenemos dni, nombre y apellido, provincia de residencia, domicilio y mail de contacto. A su vez, las vacunas tienen una fecha de fabricación, fecha de aplicación, numero de lote, numero de fabricacion y nombre comercial.
+
+Se solicita poder tener en nuestro sistema lo necesario para que nos facilite:
+- Registrar una vacuna aplicada a un ciudadano.
+- Consultar el historial de vacunas de un ciudadano por dni.
+- Obtener cuantas personas fueron vacunadas por Provincia
+- Saber qué ciudadanos cumplen con tener una determinada cantidad de vacunas pasada por parametro.
+- Conocer dado una vacuna determinada qué ciudadanos ya se la dieron.
+
+### 2. Pago de empleados
+
+La empresa "Creativos sin límites" desea gestionar el pago de sus empleados que son todos diseñadores. Estos tienen una comisión sobre los proyectos que realizan de acuerdo al tipo de diseñador según la siguiente tabla:
+
+| Tipo de diseñador | Comisión | 
+|---|---|
+| UX | 8% | 
+| UI | 7% | 
+| IT | 12% | 
+
+Un diseñador no puede realizar un mismo proyecto dos veces. Entonces, estos almacenan una lista de los proyectos junto a cuánto ganaron por hacer cada uno. Así, un diseñador debe poder:
+- Conocer su sueldo. Para eso deberán adicionarle a la suma de lo que recaudó por todos los proyectos la comisión de acuerdo al tipo de diseñador que sea.
+- Saber cantidad de proyectos realizados hasta el momento.
+- Dado un proyecto determinado conocer cuánto gano sin comisión.
+- Mostrar el detalle del sueldo discriminado para todos los proyectos que hizo. Es decir, por cada proyecto mostrar el nombre, cuánto gano y cuánto representa la comisión
+
+
+### 3. Control altura y peso
+
+Realizar un sistema que controle la altura y peso de una persona a través del tiempo. La persona debe tener un nombre, apellido y fecha de nacimiento. 
+
+Cada persona cuando se pesa y mide debe registrar su peso y altura justo con la fecha. 
+
+La persona debe tener una forma de conocer:  
+
+- Su peso y altura en una fecha en particular.  
+
+- El promedio de peso y de altura en un año.   
+
+- El porcentaje de crecimiento de una fecha a otra.
+
+### 4. Control calorías
+
+Realizar un sistema que controle las calorías consumidas por personas dentro de una familia. Las personas se almacenarán en una entidad denominada familia, es decir, una familia va a tener muchas personas. 
+
+Existirán platos los cuales tendrán nombre, ingredientes y cantidad de calorías que poseen.  
+
+De las personas se desea conocer el nombre y fecha de nacimiento. Cada vez que una come un plato se debe guardar ese dato para luego saber:   
+
+- Cantidad de calorías consumidas en total por la persona. 
+
+- Promedio de calorías por familia. 
+
+- Persona que consumió más calorías en la familia. 
+
+- Persona que consumió menos calorías en la familia. 
+
+### 5. Sistema de población
+
+Realizar un abm de lugares. Los lugares pueden ser de tipo: **Barrio**, **Ciudad**, **Provincia o Estado**, **País**, **Continente**.
+
+Todos los tipos de lugares tienen un nombre, código y una lista de coordenadas (latitud y longitud) que unidas representan el contorno del lugar
+
+Las reglas de composición son:
+
+- Una **ciudad** está compuesta por barrios.
+- Una **provincia o estado** está compuesta por ciudades.
+- Un **país** está compuesto por provincias o estados.
+- Un **continente** está compuesto por países.
+
+Para el caso de los barrios tendrán un atributo llamado `población`, el mismo indica la cantidad de habitantes del barrio. En los otros casos este atributo no existe, pero se desea calcular la población de forma automática.  
+
+Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A realizar: 
+
+- ABM (Alta, Baja y Modificación) de lugares
+- Consulta de población de lugares por código de lugar
+- Pantalla de información con:
+  - País con más población
+  - País con menos población
+  - Continente con más población
+  - Continente con menos población
+
+</details>
+
+<details>
+  
+<summary><strong>Ejercicios repaso evaluación unidad 6</strong></summary>
+
+### 1. Consumo de electricidad de viviendas
+Realizar un sistema que administre el consumo de electricidad de viviendas. 
+
+Cada vivienda tendrá una dirección, un código postal y un dueño asignado. El dueño deberá tener asociado un nombre, un apellido y un DNI. Si la vivienda es una casa, se guardarán los metros cubiertos por un lado y los descubiertos por otro. En cambio, si es un departamento se guarda la cantidad de ambientes.  
+
+Una vez por mes se deberá cargar cuál fue el consumo de electricidad de cada vivienda. Al cargar el consumo se debe almacenar el mes (de enero a diciembre) y los KWh consumidos en ese periodo, comprobando que el mes no esté ya cargado para esa vivienda.  
+
+Además de permitir cargar el consumo, se debe generar el método correspondiente para poder calcular lo que debe pagar cada vivienda por su consumo. Para dicho cálculo se utilizan dos valores:  
+- Para casas: $100 el KWh
+- Para departamentos: $50 el KWh  
+
+_Ejemplo: si una casa consumió en un mes 20KWh debe pagar $2000._
+
+Por otro lado, si el consumo del mes se redujo un 10% respecto del consumo del mismo mes del año anterior se debe aplicar un descuento del 5% al número final. 
+Realizar las clases correspondientes con sus métodos asociados y un programa de prueba que demuestre el buen funcionamiento del sistema y cálculos ejemplo de lo que deben pagar las viviendas.  
+
+### 2. Estructura ONG
+
+Todas las personas que participan dentro de una ONG se registran indicando nombre, apellido, fecha de nacimiento, dirección, código postal y si desean registrarse para contribuir con una mensualidad o no. 
+
+Además, dentro de la organización hay distintos roles: Voluntarios miembro, voluntarios externos, administradores y profesores (titulares e interinos). Cabe destacar que los voluntarios no reciben un sueldo por lo que hacen mientras que los administradores y profesores sí. 
+
+Los voluntarios miembros tienen un puntaje que se va modificando cada vez que realizan una acción solidaria. De los voluntarios externos habrá que guardar la institución en la que trabajan indicando el nombre y dirección de esta.  
+
+Dentro de los que reciben un sueldo, habrá que guardar en qué banco se deposita el sueldo (Macro, Santander, BBVA y HSBC), la fecha de cobro y la fecha de alta en la empresa.  
+
+Si es un personal administrativo, es importante saber qué computadora utiliza (código alfanumérico) así como su nombre de usuario y la contraseña (verificar que tenga mínimo 8 caracteres, una mayúscula y algún carácter especial). Estos datos, en caso de que sea profesor, no importan. Sí será relevante almacenar el nombre de la materia que dictan y la cantidad de horas que trabajan. Todos los profesores interinos dan más de una materia por lo que habrá que guardar la información de todas las que enseña junto con la cantidad de horas.  
+
+Otra cosa que diferencian a las personas que participan de las ONG son las zonas barriales que visitan ya que se distribuyen en toda la capital de Buenos Aires. Dados los 48 barrios porteños, todos los voluntarios miembros se desarrollarán en: _Montserrat, Nueva Pompeya, Nuñez, Belgrano y Constitución_, todos los voluntarios externos lo harán en: _Coghlan, Palermo, Barracas, Parque Patricios, Retiro y Saavedra_, todos los profesores en: _Puerto Madero, San Cristóbal, Palermo, Monte Castro, Versalles, Villa Santa Rita y Colegiales_ y, por último, todos los administrativos estarán en: _Flores, Floresta, Agronomía, Colegiales y Parque Chas_ 
+
+Además de confeccionar la estructura correspondiente, se solicitan las siguientes funcionalidades:
+
+- Todos realizan una acción solidaria acorde al rol en el que están. La acción solidaria para los voluntarios consiste en mostrar un cartel que diga: “Ofrezco mi ayuda para lo que necesiten” además de sumarle un punto a su puntaje (si es voluntario miembro). Los administrativos deberán mostrar su usuario de pc junto al nombre y los profesores la o las materias que dictan en la ONG (dependiendo si es interino o no).  
+
+- Tanto de los asalariados como de los voluntarios importa saber si son mayores de edad o no.  
+
+- De los integrantes de la organización se mostrará el nombre de los incorporados hace menos de 2 meses.  
+
+- Mostrar de cada banco la cantidad de trabajadores que cobran el sueldo por ese medio. 
+
+</details>
+
+
+<details>
+
+<summary>Unidad 7 - Manejo de excepciones</summary>
+
+### 1. Ejecutar el siguiente fragmento de código:  
+
+```java
+public class Main {  
+    public static void Main(String[] args) {  
+        String nombre = null;  
+        System.out.println("El largo del nombre es:" + nombre.length);  
+    }  
+}
+```
+Resolver la excepción de cuatro formas diferentes. Siempre al final del programa 	habrá que mostrar el nombre de ustedes a modo de firma:  
+- Bloque try/catch.  
+- Throw. 
+- Throws. 
+- Clase personalizada.
+
+### 2. Sistemas de alarmas (ejercicio 5, unidad 3)
+
+Dado el ejercicio de sistema de alarmas que tiene un edificio (ejercicio 5, unidad 3), habrá que permitirle al usuario que pueda elegir de cuál de todos los dispositivos quiere obtener más información.  
+
+Para esto habrá que pedirle al usuario que ingrese un número desde el 0 hasta la cantidad de alarmas que estén registradas. Acorde al número que elija es el dispositivo que se mostrará. 
+
+Deberán tener en cuenta en la implementación que no se corte la ejecución del programa si el usuario no ingresa un número entero o ingresa un número mayor a la cantidad de dispositivos que hay instalados en el edificio. 
+
+### 3. Sistema componentes de pc (ejercicio 4, unidad 3)
+
+Agregarle al sistema de compras de componentes de computadora (ejercicio 4, unidad 3) las excepciones necesarias para que el usuario sepa si no hay stock de los componentes que eligió y lanzar una excepción en caso de que al hacer la compra falte uno de los componentes principales (una CPU, un dispositivo de entrada y uno de salida). 
+
+### 4. Biblioteca virtual
+
+Vamos a hacer un programa que me permita gestionar una biblioteca virtual con libros electrónicos, autores, usuarios y préstamos. 
+
+Los géneros de los libros pueden ser: ficción, no ficción, aventura, ciencia ficción, saga y romance. Los libros van a ser escritos por un autor del cual interesa conocer el nombre, la fecha de nacimiento, el dni y su bibliografía (todos los libros que escribió). 
+
+De cada libro electrónico se guardará el título, el autor, el género, el nombre del archivo pdf y la cantidad de descargas disponibles que tiene: 145 (es igual para todos los libros). 
+
+Los usuarios de la plataforma se registran ingresando nombre, fecha de nacimiento, DNI, mail y el tipo de membresía que tiene. Si es bronce podrá tener hasta 5 libros prestados, Plata como mucho 15 libros y si es oro 50 préstamos activos. 
+
+El sistema debe gestionar los préstamos y devoluciones de libros electrónicos. Si un usuario intenta tomar prestado un libro que ya ha alcanzado el límite, se debe lanzar una excepción personalizada (LimiteDePrestamosAlcanzadoException). Así como hay que lanzar la excepción (‘MembresiaException’) si el usuario ya alcanzó su cupo de libros que puede tomar prestados simultáneamente. 
+
+Además, hacer los métodos necesarios para poder agregar, borrar o modificar nuevos libros. En la clase 'Main' crea instancias de autores, libros electrónicos, usuarios y bibliotecarios para poder realizar operaciones de préstamo y devolución, y maneja las excepciones adecuadamente. 
+
+### 5. Sistema de bebidas (ejercicio 5, unidad 5)
+
+Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar que: 
+- Al añadir personas al sistema ya no exista ese dni. 
+- Encuentre la bebida que quiere consumir y tenga esa cantidad que solicita. 
+- Existen personas registradas para determinar el de mejor y peor coeficiente de hidratación.
+  
+</details>

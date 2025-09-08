@@ -17,7 +17,7 @@ public class PartidoPolitico {
 
     public void hacerCampania(){
         for (Mensajero m:mensajeros){
-            m.hacerMensaje("Vote por el partido para un mejor futuro");
+            m.enviarMensaje("Vote por el partido para un mejor futuro");
         }
     }
 }

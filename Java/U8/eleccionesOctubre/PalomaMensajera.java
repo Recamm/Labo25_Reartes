@@ -1,4 +1,4 @@
-package U8;
+package U8.eleccionesOctubre;
 
 public class PalomaMensajera extends Ave implements Mensajero {
     private Boolean aprendioMapa;

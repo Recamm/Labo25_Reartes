@@ -1,4 +1,4 @@
-package U8;
+package U8.eleccionesOctubre;
 
 public abstract class Dispositivo {
     private String fabricante, modelo, nroDeSerie;

@@ -1,6 +1,4 @@
-package U8;
-
-import U5.bebidas.Persona;
+package U8.eleccionesOctubre;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

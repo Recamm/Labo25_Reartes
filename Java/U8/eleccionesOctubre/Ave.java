@@ -1,4 +1,4 @@
-package U8;
+package U8.eleccionesOctubre;
 
 public abstract class Ave {
     private String color, nombre, especie;

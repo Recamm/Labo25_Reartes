@@ -1,4 +1,4 @@
-package U8;
+package U8.eleccionesOctubre;
 
 public class TelefonoMoviles extends Dispositivo implements Mensajero {
     private int nroCelular, creditosDisponibles;

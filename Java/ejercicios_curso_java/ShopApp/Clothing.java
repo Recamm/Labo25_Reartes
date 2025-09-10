@@ -1,6 +1,6 @@
-package ejercicios_curso_java;
+package ejercicios_curso_java.ShopApp;
 
-public class Clothing {
+public class Clothing implements Comparable<Clothing>{
     private String description, size;
     private double price;
 
@@ -42,5 +42,10 @@ public class Clothing {
     @Override 
     public String toString() {
         return getDescription() + ", " + getSize() + ", " + getPrice();
+    }
+
+    @Override
+    public  int compareTo(Clothing c) { 
+        return this.description.compareTo(c.description);
     }
 }

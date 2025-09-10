@@ -1,4 +1,4 @@
-package ejercicios_curso_java;
+package ejercicios_curso_java.ShopApp;
 
 public class Customer {
     private String name, size;

@@ -783,7 +783,7 @@ Añadir al ejercicio 3 de la unidad 6 el manejo de excepciones para corroborar q
 
 
 <details>
-<summary><strong> Ejercicio repaso evaluación unidades 3, 4 y 5</strong></summary>
+<summary>Ejercicio repaso evaluación unidades 3, 4 y 5</summary>
   
 ### 1. Gestión de tickets:
 
@@ -813,7 +813,7 @@ Resolver el sistema que responda de manera correcta a todas las funcionalidades 
 </details>
 
 <details>
-<summary><strong> Unidad 6 - HashMaps y HashSets </strong></summary>
+<summary> Unidad 6 - HashMaps y HashSets</summary>
   
 ### 1. Vacunatorio
 
@@ -904,7 +904,7 @@ Tener en cuenta que en nuestro mundo se guardan una lista de Continentes. A real
 
 <details>
   
-<summary><strong>Ejercicios repaso evaluación unidad 6</strong></summary>
+<summary>Ejercicios repaso evaluación unidad 6</summary>
 
 ### 1. Consumo de electricidad de viviendas
 Realizar un sistema que administre el consumo de electricidad de viviendas. 
